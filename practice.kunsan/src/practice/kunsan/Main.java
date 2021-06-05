@@ -1,12 +1,15 @@
 package practice.kunsan;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		int dan = 3, i;
-		System.out.println(+dan + "단을 출력합니다.");
-		for (i = 1; i <= 9; i++) {
-			System.out.println(dan + "*" + i + "=" + dan * i);
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Please Enter a number to print its multiplication table: ");
+		int i = sc.nextInt();
+		for (int j = 1; j < 10; j++) {
+			System.out.println(i + " * " + j + " = " + i * j);
 		}
 	}
 }
