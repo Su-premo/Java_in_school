@@ -3,13 +3,10 @@ package practice.kunsan;
 public class Main {
 
 	public static void main(String[] args) {
-
-		int sum = 0;
-
-		for (int i = 1; i <= 100; i++) {
-			sum += i;
+		int dan = 3, i;
+		System.out.println(+dan + "단을 출력합니다.");
+		for (i = 1; i <= 9; i++) {
+			System.out.println(dan + "*" + i + "=" + dan * i);
 		}
-		System.out.println("1부터 100까지의 합은 " + sum + "입니다.");
 	}
-
 }
