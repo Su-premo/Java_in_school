@@ -1,16 +1,15 @@
 package practice.kunsan;
 
-import java.util.Scanner;
-
 public class Main {
 
-      public static void main(String[] args) {
-           Scanner sc = new Scanner(System.in);
-           float celsius, fahrenheit;
-           System.out.print("Enter temperature in Celsius: ");
+	public static void main(String[] args) {
 
-           celsius = sc.nextFloat();
-           fahrenheit = 32 + (celsius * 9 / 5);
-           System.out.println(celsius +" ºC is equal to " + fahrenheit + " ºF");                                  
-     }
+		int sum = 0;
+
+		for (int i = 1; i <= 100; i++) {
+			sum += i;
+		}
+		System.out.println("1부터 100까지의 합은 " + sum + "입니다.");
+	}
+
 }
